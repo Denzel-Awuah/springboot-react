@@ -9,7 +9,7 @@ class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
-		Assertions.fail("OOPS, all of the test failed");
+		Assertions.fail("OOPS, WTFFFF all of the test failed");
 	}
 
 }
