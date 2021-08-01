@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  POSTGRESQL_VERSION: 13.1
+  POSTGRESQL_VERSION: 11
   POSTGRESQL_DB: applicationdb
   POSTGRESQL_USER: postgres
   POSTGRESQL_PASSWORD: password
