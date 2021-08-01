@@ -34,4 +34,4 @@ jobs:
       - name: Maven Clean Package
         run: |
           chmod +x mvnw
-          ./mvnw --no-transfer-progress clean package -P build-frontend
+          ./mvnw --no-transfer-progress clean package -e -P build-frontend
