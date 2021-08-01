@@ -5,7 +5,6 @@ import {Drawer, Input, Col, Select, Form, Row, Button, Spin} from 'antd';
 import {addNewStudent} from "./client";
 import {useState} from "react";
 import {successNotification} from "./Notification";
-import {errorNotification} from "./Notification";
 
 const {Option} = Select;
 

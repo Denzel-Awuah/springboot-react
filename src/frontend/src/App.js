@@ -29,9 +29,8 @@ import {
 
 import StudentDrawerForm from "./StudentDrawerForm";
 
-import {errorNotification, successNotification} from "./Notification";
-
 import './App.css';
+import {successNotification} from "./Notification";
 
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
