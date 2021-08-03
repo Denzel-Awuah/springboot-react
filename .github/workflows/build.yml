@@ -5,20 +5,20 @@ on:
     branches: [ master ]
 
   workflow_dispatch:
-  
+
 env:
-  POSTGRESQL_VERSION: 13.1
+  POSTGRESQL_VERSION: 11
   POSTGRESQL_DB: applicationdb
-  POSTGRESQL_USER: denzelawuah
-  POSTGRESQL_PASSWORD: pass1word
-  JAVA_VERSION: 1.15
+  POSTGRESQL_USER: postgres
+  POSTGRESQL_PASSWORD: password
+  JAVA_VERSION: 1.16
 
 jobs:
   build:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:13.1
+        image: postgres:11
         env:
           POSTGRES_DB: ${{ env.POSTGRESQL_DB }}
           POSTGRES_USER: ${{ env.POSTGRESQL_USER }}
@@ -33,5 +33,5 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
       - name: Maven Clean Package
         run: |
-          ./mvnw --no-transfer-progress clean package -P build-frontend
-      
+          chmod +x mvnw
+          ./mvnw --no-transfer-progress clean package -e -P build-frontend

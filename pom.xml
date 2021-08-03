@@ -25,8 +25,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+
+        <!-- To remove boilerplate code -->
         <dependency>
-            <groupId>org.projectlombok</groupId> <!-- To remove boilerplate code -->
+            <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
@@ -70,7 +72,7 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-<!--                <version>2.5.2</version>-->
+                <version>3.1.2</version>
                 <configuration>
                     <from>
                         <image>openjdk:16</image>
@@ -104,7 +106,7 @@
                     <plugin>
                         <groupId>com.google.cloud.tools</groupId>
                         <artifactId>jib-maven-plugin</artifactId>
-                        <!--                <version>2.5.2</version>-->
+                        <version>3.1.2</version>
                         <configuration>
                             <from>
                                 <image>openjdk:16</image>
@@ -160,7 +162,7 @@
                     <plugin>
                         <groupId>com.google.cloud.tools</groupId>
                         <artifactId>jib-maven-plugin</artifactId>
-                        <!--                <version>2.5.2</version>-->
+                        <version>3.1.2</version>
                         <configuration>
                             <from>
                                 <image>openjdk:16</image>
@@ -210,7 +212,7 @@
         <profile>
             <id>build-frontend</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <!--The settings for the plugin-->
             <build>
@@ -218,8 +220,6 @@
                     <plugin>
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
-                        <!-- Use the latest released version:
-                                  https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/ -->
                         <version>1.11.2</version>
                         <configuration>
                             <nodeVersion>v4.6.0</nodeVersion>
@@ -234,7 +234,7 @@
                                 </goals>
                                 <configuration>
                                     <nodeVersion>v15.4.0</nodeVersion>
-                                    <npmVersion>7.3.0</npmVersion>
+                                    <!--                                    <npmVersion>7.3.0</npmVersion>-->
                                 </configuration>
                             </execution>
                             <execution>
@@ -283,5 +283,4 @@
             </build>
         </profile>
     </profiles>
-
 </project>
