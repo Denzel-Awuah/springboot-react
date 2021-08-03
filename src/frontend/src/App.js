@@ -29,7 +29,7 @@ import {
 
 import StudentDrawerForm from "./StudentDrawerForm";
 
-import {errorNotification, successNotification} from "./Notification";
+import { successNotification} from "./Notification";
 
 import './App.css';
 
