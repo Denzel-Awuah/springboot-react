@@ -16,7 +16,6 @@ env:
   POSTGRESQL_PASSWORD: pass1word
   # Java
   JAVA_VERSION: 1.16
-  SPRING_PROFILES_ACTIVE: dev
   # DockerHub
   DOCKER_HUB_USERNAME: denzelawuah
   # AWS & Elastic Bean Stalk
