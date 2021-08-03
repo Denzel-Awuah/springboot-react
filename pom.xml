@@ -273,7 +273,7 @@
                                             <directory>src/frontend/build</directory>
                                         </resource>
                                     </resources>
-                                    <!-- Output directory forr the frontend build -->
+                                    <!-- Output directory for the frontend build -->
                                     <outputDirectory>${basedir}/target/classes/static</outputDirectory>
                                 </configuration>
                             </execution>
