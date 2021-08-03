@@ -204,6 +204,9 @@ function App() {
             </Content>
             <Footer style={{textAlign: 'center'}}>By Denzel
                 <h1>Ayeeeeeeeeeeeeeeeeee THhis is proof  CI/CD works!!</h1>
+                <h1>:D</h1>
+                <h1>:D</h1>
+                <h1>:D</h1>
             </Footer>
         </Layout>
     </Layout>
