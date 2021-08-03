@@ -69,7 +69,7 @@ jobs:
       - name: Maven Clean Package and Push to Dockerhub
         run: |
           chmod +x mvnw
-          ./mvnw --no-transfer-progress clean package \
+          ./mvnw --no-transfer-progress clean package spring.profiles.active=dev \
             -P build-frontend \
             -P jib-push-to-dockerhub \
               -D app.image.tag=${{steps.build-number.outputs.BUILD_NUMBER}}
