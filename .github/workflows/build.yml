@@ -9,8 +9,8 @@ on:
 env:
   POSTGRESQL_VERSION: 11
   POSTGRESQL_DB: applicationdb
-  POSTGRESQL_USER: denzelawuah
-  POSTGRESQL_PASSWORD: pass1word
+  POSTGRESQL_USER: postgres
+  POSTGRESQL_PASSWORD: password
   JAVA_VERSION: 1.16
 
 jobs:
